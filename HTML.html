@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS.css">
+    <title>Notas</title>
+</head>
+<body>
+    <div class="barra">
+        <h2>Notas</h2>
+        <ul>
+            <li>Michael Steedwar Parra Daza</li>
+            <li>55223025</li>
+        </ul>
+    </div>
+
+    <div class="contenido">
+        <form id="actividades-form" class="formulario">
+            <label for="actividad">Actividad:</label>
+            <input type="text" id="actividad" name="actividad" required>
+            <br>
+            <label for="nota">Nota:</label>
+            <input type="number" id="nota" name="nota" step="0.01" min="0" max="5" required>
+            <br>
+            <button id="guardar" type="submit">Guardar</button>
+        </form>
+
+        <table id="actividades-table">
+            <thead>
+                <tr>
+                    <th>Actividad</th>
+                    <th>Nota</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <div class="resultado">
+            <p>Promedio: <span id="promedio">0.00</span></p>
+            <p>Estado: <span id="estado">No Aprobado</span></p>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <p>¿Desea eliminar la actividad?</p>
+            <button id="modalsi">Sí</button>
+            <button id="modalno">No</button>
+        </div>
+    </div>
+
+    <script src="JS.js"></script>
+</body>
+</html>
