@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS.css">
+    <title>Notas</title>
+</head>
+<body>
+    <div class="barra">
+        <h2 id="nombreapp">Notas</h2>
+        <ul>
+            <li>Michael Steedwar Parra Daza</li>
+            <li>55223025</li>
+        </ul>
+    </div>
+
+    <div class="contenido">
+        <div class="tabla-seccion">
+            <table id="actividades">
+                <thead>
+                    <tr>
+                        <th> </th>
+                        <th>Actividad</th>
+                        <th>Nota</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <div class="formulario-seccion">
+            <div class="resultado">
+                <p>Promedio: <span id="promedio">0.00</span></p>
+                <p>Estado: <span id="estado">No Aprobado</span></p>
+            </div>
+            <form id="actividades-form" class="formulario">
+                <label for="actividad">Actividad:</label>
+                <input type="text" id="actividad" name="actividad" required>
+                <br>
+                <label for="nota">Nota:</label>
+                <input type="number" id="nota" name="nota" step="0.01" min="0" max="5" required>
+                <br>
+                <button id="guardar" type="submit">Guardar</button>
+            </form>
+            
+        </div>
+
+
+        <p>La disciplina es la clave del éxito</p>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="contenidomodal">
+            <p>¿Desea eliminar la actividad?</p>
+            <button id="modalsi">Sí</button>
+            <button id="modalno">No</button>
+        </div>
+    </div>
+    
+    <script src="JS.js"></script>
+</body>
+</html>
